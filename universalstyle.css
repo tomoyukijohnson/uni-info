@@ -1,0 +1,197 @@
+
+/*
+ * Fonts, typefaces
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,400;10..100,700&display=swap');
+
+@font-face {
+  font-family: calsonPro;
+  src: url(../static/adobe-calson-pro/acaslonpro-regular.otf);
+}
+
+@font-face {
+  font-family: calsonPro;
+  src: url(../static/adobe-calson-pro/acaslonpro-italic.otf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: calsonPro;
+  src: url(../static/adobe-calson-pro/acaslonpro-bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: calsonPro;
+  src: url(../static/adobe-calson-pro/acaslonpro-semibold.otf);
+  font-weight: semibold;
+}
+
+@font-face {
+  font-family: calsonPro;
+  src: url(../static/adobe-calson-pro/acaslonpro-semibolditalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: calsonPro;
+  src: url(../static/adobe-calson-pro/acaslonpro-bolditalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: upperWestSide;
+  src: url(../static/upper-west-side/upperwestside.regular.ttf);
+}
+
+@font-face {
+  font-family: tnyCalsonPro;
+  src: url(../static/tny-adobe-calson-pro/tnyadobecaslonproregular.ttf);
+}
+
+html, .lead, .text-body-secondary, .essayHeadline, h1, h2, h3, h4, h5, h6, em {
+  font-family: calsonPro, Georgia, Times, serif;
+}
+
+p {
+  font-family: tnyCalsonPro;
+  font-size: 18px;
+}
+
+.calsonPro {
+  font-family: calsonPro;
+}
+
+.essayText {
+  font-size: 21px;
+}
+
+/*
+ * Root
+ */
+
+:root {
+  --red: #db3334;
+}
+
+
+/*
+ * Styling
+ */
+
+.blank-link {
+  color: black;
+  text-decoration: none;
+}
+
+
+.blank-lin:hover {
+  color: black;
+}
+
+
+.navbar.sticky-top {
+  border-bottom: 1px solid #333333;
+  background-color: #ffffff;
+}
+
+.category-nav-links {
+  color: var(--red);
+  text-decoration: none;
+  text-decoration: none;
+  font-family: calsonPro;
+  
+}
+
+.category-nav-links:hover {
+  color: var(--red);
+}
+
+.has-dropcap:first-letter {
+  font-family: tnyCalsonPro, Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em -0.1em 0;
+}
+
+.category-article {
+  margin: 0 0 -0.1em 0;
+  font-size: 18px;
+}
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+}
+
+.card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2.5rem 0;
+  border-top: .05rem solid black;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
